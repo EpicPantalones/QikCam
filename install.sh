@@ -14,5 +14,5 @@ sudo sed -i 's/CONF_SWAPSIZE=.*/CONF_SWAPSIZE=1024/g' /etc/dphys-swapfile
 sudo dphys-swapfile setup
 sudo dphys-swapfile swapon
 
-git clone git@github.com:EpicPantalones/QikCam.git
+git clone https://github.com/EpicPantalones/QikCam.git
 cd QikCam
