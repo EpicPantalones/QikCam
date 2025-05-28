@@ -16,3 +16,4 @@ sudo dphys-swapfile swapon
 
 git clone https://github.com/EpicPantalones/QikCam.git
 cd QikCam
+python3 -m pip install yaml
