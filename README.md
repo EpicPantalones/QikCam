@@ -11,7 +11,7 @@ Attach camera module.
 Upon log in, run:
 
 ```sh
-curl <put link here>
+curl -O https://raw.githubusercontent.com/EpicPantalones/QikCam/refs/heads/main/install.sh
 chmod +x ./isntall.sh
 ./install.sh
 ```
