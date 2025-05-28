@@ -1,0 +1,11 @@
+sender:
+  ip_addr: "192.168.0.100"  # IP address of the sender
+  port: 5001                # port of the sender
+  int: 2                    # rate of capture in seconds
+  CAM_ID: "camX"            # username for camera
+  gen_token: true
+  token_length: 64
+  token: ""
+  width: 512                # resolution of the camera
+  height: 300
+  
