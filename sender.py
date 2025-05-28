@@ -9,7 +9,7 @@ CAM_ID = '__CAM_ID__'
 TOKEN = '__TOKEN__'
 IMAGE_PATH = '/home/__CAM_ID__/QikCam/image.jpg'
 
-CAPTURE_CMD = f"libcamera-still -n --immediate -e bmp --width __WIDTH__ --height __HEIGHT__ -o {IMAGE_PATH}"
+CAPTURE_CMD = f"libcamera-still -n --immediate -e jpg --width __WIDTH__ --height __HEIGHT__ -o {IMAGE_PATH}"
 
 
 def send_image(path):

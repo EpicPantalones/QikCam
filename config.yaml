@@ -3,9 +3,9 @@ sender:
   port: 5001                # port of the sender
   int: 2                    # rate of capture in seconds
   CAM_ID: "camX"            # username for camera
-  gen_token: true
-  token_length: 64
-  token: ""
-  width: 512                # resolution of the camera
-  height: 300
+  gen_token: true           # whether to generate a token 
+  token_length: 64          # length of the token if gen_token is true
+  token: ""                 # token for the camera, if gen_token is false 
+  width: 1024                # resolution of the camera
+  height: 600               # resolution of the camera  
   

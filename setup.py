@@ -19,10 +19,13 @@ with open(SENDER_PATH, "r") as f:
 sender_cfg = config["sender"]
 if sender_cfg.get("gen_token", False):
     token_length = sender_cfg.get("token_length", 16)
-    token = ''.join(random.choices(string.ascii_letters + string.digits, k=token_length))
+    token = ''.join(random.choices(
+        string.ascii_letters + string.digits, k=token_length))
     sender_cfg["token"] = token
 else:
     token = sender_cfg.get("token", "")
+
+print(f"token: {token}")
 
 # Replace __NAME__ placeholders with config values
 for key, value in config.get("sender", {}).items():

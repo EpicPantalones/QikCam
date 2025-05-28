@@ -16,7 +16,7 @@ chmod +x ./install.sh
 ./install.sh
 ```
 
-Once those steps finish, the resulting GitHub repo will have a `config.yaml`. Edit the settings to your setup, then run
+Once those steps finish, the resulting GitHub repo will have a `config.yaml`. Edit the config, then run
 
 ```sh
 python3 setup.py

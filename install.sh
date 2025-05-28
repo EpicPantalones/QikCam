@@ -1,19 +1,17 @@
 #!/bin/bash
 set -xe
 
-echo "----------------- Upgrading System -----------------"
 sudo apt update
 sudo apt upgrade -y
+sudo apt install -y git zsh libcamera-dev libjpeg-dev python3-yaml
 
-echo "----------------- Installing Dependencies -----------------"
-sudo apt install -y git libcamera-dev libjpeg-dev libtiff5-dev libboost-program-options-dev libdrm-dev libexif-dev
-
-echo "------------------- Setting up Swapfile -------------------"
 sudo dphys-swapfile swapoff
 sudo sed -i 's/CONF_SWAPSIZE=.*/CONF_SWAPSIZE=1024/g' /etc/dphys-swapfile
 sudo dphys-swapfile setup
 sudo dphys-swapfile swapon
 
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+
+chsh -s /usr/bin/zsh
+
 git clone https://github.com/EpicPantalones/QikCam.git
-cd QikCam
-python3 -m pip install yaml
