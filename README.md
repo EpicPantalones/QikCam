@@ -16,6 +16,12 @@ chmod +x ./isntall.sh
 ./install.sh
 ```
 
+Once those steps finish, the resulting GitHub repo will have a `config.yaml`. Edit the settings to your setup, then run
+
+```sh
+python3 setup.py
+```
+
 You can now run the camera by running
 
 ```sh

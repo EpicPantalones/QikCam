@@ -15,7 +15,4 @@ sudo dphys-swapfile setup
 sudo dphys-swapfile swapon
 
 git clone git@github.com:EpicPantalones/QikCam.git
-
 cd QikCam
-
-python3 setup.py
